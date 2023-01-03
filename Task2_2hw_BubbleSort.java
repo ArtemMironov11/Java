@@ -25,7 +25,7 @@ public class Task2_2hw_BubbleSort {
         }
         System.out.println("Each 108 minutes enter:");
         System.out.println(Arrays.toString(initialArr));
-        try (PrintWriter out = new PrintWriter("Task2_2hw_Log.txt")) {
+        try (PrintWriter out = new PrintWriter("HW2/Task2_2hw_Log.txt")) {
             out.println(Arrays.toString(initialArr));
             logger.info("Строка записана");
         } catch (SecurityException e) {
