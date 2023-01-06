@@ -12,38 +12,37 @@ public class Task2_4hw {
         list.add(60);
         list.add(70);
 
-        LinkedList<Integer> finallist = new LinkedList<Integer>();
+        LinkedList<Integer> FinalList = new LinkedList<Integer>();
 
         for (Integer zztemp : list) {
-            finallist.add(zztemp);
+            FinalList.add(zztemp);
         }
-        System.out.println(finallist);
+        System.out.println(FinalList);
 
-        enqueue(finallist, 42);
-        System.out.println(finallist);
+        enqueue(FinalList, 42);
+        System.out.println(FinalList);
 
-        System.out.print(dequeue(finallist) + " ");
-        System.out.println(finallist);
+        System.out.print(dequeue(FinalList) + " ");
+        System.out.println(FinalList);
 
-        System.out.print(first(finallist) + " ");
-        System.out.println(finallist);
+        System.out.print(first(FinalList) + " ");
+        System.out.println(FinalList);
     }
 
-    public static void enqueue(LinkedList<Integer> list, int number) {
-        list.addLast(number);
+    public static void enqueue(LinkedList<Integer> list, int Number) {
+        list.addLast(Number);
     }
 
     public static int dequeue(LinkedList<Integer> list) {
-        int number = 0;
-        number = list.get(0);
+        int Number = 0;
+        Number = list.get(0);
         list.remove(0);
-        return number;
+        return Number;
     }
 
     public static int first(LinkedList<Integer> list) {
-        int number = 0;
-        number = list.get(0);
-        return number;
+        int Number = 0;
+        Number = list.get(0);
+        return Number;
     }
-
 }
